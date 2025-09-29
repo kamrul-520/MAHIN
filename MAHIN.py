@@ -515,12 +515,14 @@ def login_2(uid):
                 open('/sdcard/KAMRUL-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                     loop += 1
+               
                 break
     except Exception:
         time.sleep(5)
 
 if __name__ == '__main__':
     BNG_71_()
+
 
 
 
